@@ -1,0 +1,37 @@
+{
+    "name": "zillur/zatca-phase2",
+    "description": "An elegant ZATCA PHASE 2 API for the Laravel framework.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zillur Rahman",
+            "email": "zillurrahman68582@gmail.com"
+        }
+    ],
+    "require": {
+        "erusev/parsedown": "^1.7",
+        "php": "^8.1",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.7",
+        "mockery/mockery": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "vicgonvt\\Press\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "vicgonvt\\Press\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "vicgonvt\\Press\\PressBaseServiceProvider"
+            ]
+        }
+    }
+}
